@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "PAOLA DREP GONGO 0104",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://x.com/ActuFootRDCongo/status/1991472531400978805/photo/1",
+      "sha256": "9f9677b6f8f202e69ec40102d6ef38e485d29b316881580ace8fc9630ca4cedf"
+    },
+    "motivations": "IM READY",
+    "objectives": "ONBJECTIVE TEST",
+    "paymentAddress": "addr_test1qzu2um6zcth33q28dqfuq5tzjehktse5a95hnd7puh9ep5vn8a90yh943jrv0zdg393tyvzxxjth5u6zzzd2erx2akpsvh48uk",
+    "qualifications": "YES QUALIFIED",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "My X acount is here, if you wanna know about me ",
+        "uri": "https://x.com/Paolabwino?t=RzABq2aFHUb0vnHQzPPFqQ&s=09"
+      },
+      {
+        "@type": "Identity",
+        "label": "who i'am  in the RWA",
+        "uri": "https://www.tiktok.com/@paolabwino?_r=1&_t=ZN-91YeiF3qiFK"
+      }
+    ]
+  }
+}
